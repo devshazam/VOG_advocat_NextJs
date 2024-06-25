@@ -8,6 +8,8 @@ import { layfair_display_sc, el_messiri } from '../fonts'
 import type { FormProps } from 'antd';
 import { Button, Checkbox, Form, Input } from 'antd';
 
+import { motion } from "framer-motion";
+
 type FieldType = {
   username?: string;
   password?: string;
@@ -54,11 +56,27 @@ export default function Home() {
           <Row className='first-top-padding'>
 
             <Col xs={12} md={4}>
-              <div className="garanty-wrapper">
+              <motion.div
+className="garanty-wrapper"
+
+  
+      initial={{
+        y: 300
+      }}
+      whileInView={{
+        y: 0,
+        transition: {
+          type: "spring",
+          bounce: 0.8,
+          duration: 0.8
+        }
+      }}
+      viewport={{ once: true, amount: 0.8 }}
+  > 
                   <img src='/icons8-shield-100.png'></img>
                   <h4>Гарантия защиты</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
-              </div>
+              </motion.div>
             </Col>
             <Col xs={12} md={4}>
             <div className="garanty-wrapper">
@@ -87,11 +105,15 @@ export default function Home() {
 
               <Col xs={12} md={4}>
                 <a href=''>
-                  <div className="practics-block">
+
+                  <motion.div className="practics-block box"   
+                  //  className="box"
+      whileHover={{ scale: 1.1 }}
+      transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                       <h5>Арбитражные споры</h5>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
                       <img src='/icons8-arrow-80.png'></img>
-                  </div>
+                  </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>

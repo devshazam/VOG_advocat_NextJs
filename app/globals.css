@@ -112,20 +112,20 @@ body {
   font-size: 14px;
 }
 .first-top-padding{
-  padding-top: 160px;
+  padding-top: 220px;
 }
 
 
 .wrap-practics{
   text-align: center;
-  margin-bottom: 40px;
-  padding-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 60px;
 }
 .h2-practics{
   display: inline-block;
 
   border-bottom: 1px solid #000;
-  margin-bottom: 35px;
+  margin-bottom: 50px;
 }
 .practics-block{
   text-align: left;
@@ -160,7 +160,7 @@ body {
   padding: 50px 0;
 }
 .footer{
-  background-color: #d3d3d3;
+  background-color: #ebebeb;
 }
 .wrapper-footer-content{
   text-align: left;

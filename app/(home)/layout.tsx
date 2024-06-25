@@ -28,7 +28,7 @@ export default function HomeLayout({
     <>
      <Navbar expand={expand} className="bg-body-tertiary "  sticky="top">
           <Container>
-            <Navbar.Brand href="#">
+            <Navbar.Brand href="/">
               <img src='/лОГОТИП.jpg' style={{width: '50px', display: 'inline-block'}}></img>{" "}
                <h1 className={el_messiri.className} style={{display: 'inline-block', fontSize: '24px'}}>Лисицкая и Удовенко</h1>
             </Navbar.Brand>
@@ -51,17 +51,17 @@ export default function HomeLayout({
                     title="Практики"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="#action3">Уголовная защита</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
+                    <NavDropdown.Item href="/practice">Уголовная защита</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice">
                     Арбитражные споры
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
+                    <NavDropdown.Item href="/practice">
                       Something else here
                     </NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="#action1">О коллегии адвокатов</Nav.Link>
-                  <Nav.Link href="#action2">Прайс-Лист</Nav.Link>
+                  <Nav.Link href="/price">Прайс-Лист</Nav.Link>
                   <Nav.Link href="#action2">Контакты</Nav.Link>
                 </Nav>
 
@@ -91,7 +91,7 @@ export default function HomeLayout({
                       <div className="wrapper-footer-content">
                         <h6><b>Контакты</b></h6>
                         <ul>
-                          <li>+7 (999) 999-99-99</li>
+                          <li><a href='/politica'>Политика конфиденциальности</a></li>
                           <li>+7 (999) 999-99-99</li>
                         </ul>
                       </div>
@@ -107,7 +107,7 @@ export default function HomeLayout({
                     </Col>
                   </Row>
                 </div>
-                <p>© 2022 - 2023. Лисицкая и Удовенко. Все права защищены.</p>
+                <p className='m-0 pb-2'>© 2022 - 2023. Лисицкая и Удовенко. Все права защищены.</p>
               </Container>
           </div>
       </footer>
@@ -115,8 +115,8 @@ export default function HomeLayout({
       <FloatButton.Group
       trigger="click"
       type="primary"
-      style={{ right: 24 }}
-      icon={<ContactsOutlined/>}
+      style={{ right: 24, fontSize: 60}}
+      icon={<ContactsOutlined />}
       
     >
       {/* <FloatButton /> */}
