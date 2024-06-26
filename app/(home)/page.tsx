@@ -8,7 +8,10 @@ import { layfair_display_sc, el_messiri } from '../fonts'
 import type { FormProps } from 'antd';
 import { Button, Checkbox, Form, Input } from 'antd';
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
+import FormComponent from './ui/form';
+
+import { Image } from 'antd';
 
 type FieldType = {
   username?: string;
@@ -20,7 +23,20 @@ type FieldType = {
 
 export default function Home() {
 
-
+  const cardVariants: Variants = {
+    offscreen: {
+      y: 300
+    },
+    onscreen: {
+      y: 0,
+      // rotate: -10,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8
+      }
+    }
+  };
   
   const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
     console.log('Success:', values);
@@ -57,40 +73,39 @@ export default function Home() {
 
             <Col xs={12} md={4}>
               <motion.div
-className="garanty-wrapper"
-
-  
-      initial={{
-        y: 300
-      }}
-      whileInView={{
-        y: 0,
-        transition: {
-          type: "spring",
-          bounce: 0.8,
-          duration: 0.8
-        }
-      }}
-      viewport={{ once: true, amount: 0.8 }}
-  > 
-                  <img src='/icons8-shield-100.png'></img>
+              className="garanty-wrapper"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+                > 
+                  <motion.img src='/icons8-shield-100.png'  variants={cardVariants}></motion.img>
                   <h4>Гарантия защиты</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
               </motion.div>
             </Col>
             <Col xs={12} md={4}>
-            <div className="garanty-wrapper">
-                  <img src='/icons8-shield-100.png'></img>
+            <motion.div
+              className="garanty-wrapper"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+                > 
+                 <motion.img src='/icons8-shield-100.png'  variants={cardVariants}></motion.img>
                   <h4>Гарантия защиты</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
-              </div>
+                  </motion.div>
             </Col>
             <Col xs={12} md={4}>
-            <div className="garanty-wrapper">
-                  <img src='/icons8-shield-100.png'></img>
+            <motion.div
+              className="garanty-wrapper"
+              initial="offscreen"
+              whileInView="onscreen"
+              viewport={{ once: true, amount: 0.8 }}
+                > 
+                  <motion.img src='/icons8-shield-100.png'  variants={cardVariants}></motion.img>
                   <h4>Гарантия защиты</h4>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
-              </div>
+                  </motion.div>
             </Col>
           </Row>
         </Container>
@@ -168,12 +183,24 @@ className="garanty-wrapper"
 
     <div  className='section-grey '>
         <Container>
-          <div className="wrap-practics">
+          <div className="wrap-practics padding-wrap-practics">
             <h2 className='h2-practics'>Достижения:</h2>
 
             <Row className=''>
 
-              <Col xs={12} md={4}>
+              <Col xs={12} md={3} >
+
+                <Image
+    src='/sert.jpg' className='sert-wrapper'/>
+              </Col>
+              <Col xs={12} md={3}>
+                <img src='/sert.jpg' className='sert-wrapper'></img>
+              </Col>
+              <Col xs={12} md={3}>
+                <img src='/sert.jpg' className='sert-wrapper'></img>
+              </Col>
+              <Col xs={12} md={3}>
+                <img src='/sert.jpg' className='sert-wrapper'></img>
               </Col>
             </Row>
           </div>
@@ -186,46 +213,7 @@ className="garanty-wrapper"
         <Container>
           <div className="wrap-practics">
           <h2 className='h2-practics'>Обратная связь:</h2>
-              <Form
-                name="basic"
-                labelCol={{ span: 8 }}
-                wrapperCol={{ span: 16 }}
-                // style={{ maxWidth: 600 }}
-                initialValues={{ remember: true }}
-                onFinish={onFinish}
-                onFinishFailed={onFinishFailed}
-                autoComplete="off"
-              >
-                <Form.Item<FieldType>
-                  label="Username"
-                  name="username"
-                  rules={[{ required: true, message: 'Please input your username!' }]}
-                >
-                  <Input />
-                </Form.Item>
-
-                <Form.Item<FieldType>
-                  label="Password"
-                  name="password"
-                  rules={[{ required: true, message: 'Please input your password!' }]}
-                >
-                  <Input.Password />
-                </Form.Item>
-
-                <Form.Item<FieldType>
-                  name="remember"
-                  valuePropName="checked"
-                  wrapperCol={{ offset: 8, span: 4 }}
-                >
-                  <Checkbox>Подтверждаю согласие</Checkbox>
-                </Form.Item>
-
-                <Form.Item wrapperCol={{ offset: 8, span: 2 }} labelAlign="left">
-                  <Button type="primary" htmlType="submit">
-                   Отправить
-                  </Button>
-                </Form.Item>
-              </Form>
+            <FormComponent></FormComponent>
           </div>
         </Container>
     </div>

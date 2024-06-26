@@ -34,7 +34,7 @@ body {
 
 .bg-wrapper{
   background: url(/12334.jpg) 50% / cover no-repeat;
-  min-height: 500px;
+  min-height: 600px;
 }
 .main-text-wrapper{
   padding-top: 150px;
@@ -52,7 +52,7 @@ body {
   position: relative;
   padding-left: 30px;
   /* margin-bottom: 30px; */
-  color: white;
+  /* color: white; */
   display: inline-block;
   vertical-align: middle;
   padding: 0 30px;
@@ -173,4 +173,34 @@ body {
 
 .float-button-group{
   width: 200px!important;
+}
+
+
+.form-control{
+  border-radius: 0%!important;
+}
+
+@media screen and (max-width: 576px) {
+  .hidden-title{
+    display: none!important;
+  }
+  .logo{
+    width: 60px!important;
+
+  }
+  .first-top-padding{
+  padding-top: 250px;
+}
+}
+
+.sert-wrapper{
+  /* padding: 20px;   */
+  max-width: 90%;
+  margin: 0 auto;
+}
+.padding-wrap-practics{
+  padding-bottom: 60px;
+}
+.btn{
+  border-radius: 0%!important;
 }

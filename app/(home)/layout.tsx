@@ -29,8 +29,8 @@ export default function HomeLayout({
      <Navbar expand={expand} className="bg-body-tertiary "  sticky="top">
           <Container>
             <Navbar.Brand href="/">
-              <img src='/лОГОТИП.jpg' style={{width: '50px', display: 'inline-block'}}></img>{" "}
-               <h1 className={el_messiri.className} style={{display: 'inline-block', fontSize: '24px'}}>Лисицкая и Удовенко</h1>
+              <img src='/logo.png' style={{width: '50px', display: 'inline-block'}} className='logo'></img>{" "}
+               <h1 className={el_messiri.className + " hidden-title"} style={{display: 'inline-block', fontSize: '24px'}} >Лисицкая и Удовенко</h1>
             </Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -40,7 +40,7 @@ export default function HomeLayout({
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  Offcanvas
+                  Меню
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
@@ -51,21 +51,21 @@ export default function HomeLayout({
                     title="Практики"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="/practice">Уголовная защита</NavDropdown.Item>
                     <NavDropdown.Item href="/practice">
                     Арбитражные споры
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="/practice">
-                      Something else here
-                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/practice">Защита по уголовным делам</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice">Недвижимость и земля</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice">Коммерческий арбитраж</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice">Банкротство</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice">Административное производство</NavDropdown.Item>
                   </NavDropdown>
                   <Nav.Link href="#action1">О коллегии адвокатов</Nav.Link>
                   <Nav.Link href="/price">Прайс-Лист</Nav.Link>
                   <Nav.Link href="#action2">Контакты</Nav.Link>
                 </Nav>
 
-                  <Button variant="primary">Telegramm</Button>
+                  <Button variant="primary"><a href='' style={{color: 'white', textDecoration: 'none'}}>Telegram</a></Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
@@ -82,14 +82,14 @@ export default function HomeLayout({
                       <div className="wrapper-footer-content">
                         <h6><b>Контакты</b></h6>
                         <ul>
-                          <li>+7 (999) 999-99-99</li>
-                          <li>+7 (999) 999-99-99</li>
+                          <li><a href='tel:+79034780554' style={{color: 'black', textDecoration: 'none'}}>+7 (903) 478-05-54</a></li>
+                          <li><a href='tel:+79034780554' style={{color: 'black', textDecoration: 'none'}}>Бульвар Энгельса 29а</a></li>
                         </ul>
                       </div>
                     </Col>
                     <Col xs={12} md={4}>
                       <div className="wrapper-footer-content">
-                        <h6><b>Контакты</b></h6>
+                        <h6><b>Документы</b></h6>
                         <ul>
                           <li><a href='/politica'>Политика конфиденциальности</a></li>
                           <li>+7 (999) 999-99-99</li>
@@ -98,10 +98,10 @@ export default function HomeLayout({
                     </Col>
                     <Col xs={12} md={4}>
                     <div className="wrapper-footer-content">
-                        <h6><b>Контакты</b></h6>
+                        <h6><b>Ссылки</b></h6>
                         <ul>
-                          <li>+7 (999) 999-99-99</li>
-                          <li>+7 (999) 999-99-99</li>
+                        <li><a href='https://vk.com/anna_lisitskaya' style={{textDecoration: 'none'}}>Вконтакте</a></li>
+
                         </ul>
                       </div>
                     </Col>
