@@ -54,7 +54,7 @@ export default function Home() {
         <Container>
           <div className="main-text-wrapper">
             <h1 className={el_messiri.className}>Лисицкая и Удовенко</h1>
-            <p>Юридическая компания высшей пробы. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis placeat obcaecati praesentium perferendis adipisci ab, culpa debitis beatae iure ex cumque consequuntur accusantium sed earum quos hic fugit repudiandae? Quis.</p>
+            <p>Разнообразные подходы, непохожий бэкграунд обуславливают вариативность защиты доверителя и как следствие - выбор оптимального пути. Обращайтесь в нашу компанию, если вы хотите получить качественные юридические услуги!</p>
           </div>
           <div className="steps__benefits-item">
               TOP-100 лучших <br/> юристов России
@@ -66,7 +66,7 @@ export default function Home() {
           <div className="wrap-top-content">
             <div className="top-contene">
               <h2>Высокие гарантии</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
+              <p>Наш опыт не находится в статике, ведь каждая жизненная ситуация, не смотря на аналогичные правовые нормы, индивилуальна!</p>
             </div>
           </div>
           <Row className='first-top-padding'>
@@ -80,7 +80,7 @@ export default function Home() {
                 > 
                   <motion.img src='/icons8-shield-100.png'  variants={cardVariants}></motion.img>
                   <h4>Гарантия защиты</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
+                  <p> Включенность в процесс с момента обращения, непосредственное участие адвоката, оперативность!</p>
               </motion.div>
             </Col>
             <Col xs={12} md={4}>
@@ -92,7 +92,7 @@ export default function Home() {
                 > 
                  <motion.img src='/icons8-shield-100.png'  variants={cardVariants}></motion.img>
                   <h4>Гарантия защиты</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
+                  <p>Системный подход, концепция защиты как итог анализа судебной практики и  НПА!</p>
                   </motion.div>
             </Col>
             <Col xs={12} md={4}>
@@ -104,7 +104,7 @@ export default function Home() {
                 > 
                   <motion.img src='/icons8-shield-100.png'  variants={cardVariants}></motion.img>
                   <h4>Гарантия защиты</h4>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, delectus. Vel, fugit doloribus accusamus possimus accusantium nam! Doloribus, ducimus doloremque!</p>
+                  <p>Креативные решения, непрямолинейность наших подходов всегда обеспечивает успех наших клиентов!</p>
                   </motion.div>
             </Col>
           </Row>
@@ -119,74 +119,74 @@ export default function Home() {
             <Row className=''>
 
               <Col xs={12} md={4}>
-                <a href=''>
+                <a href='/practice/arbitraj'>
 
                   <motion.div className="practics-block box"   
                   //  className="box"
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                       <h5>Арбитражные споры</h5>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
+                      <p>Досудебное урегулирование споров в арбитражном суде.</p>
                       <img src='/icons8-arrow-80.png'></img>
                   </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>
-                <a href=''>
+                <a href='/practice/ugolovnaya_dela'>
                 <motion.div className="practics-block box"   
                   //  className="box"
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Защита по уголовным делам</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
+                    <p>Залог успеха по уголовным делам - своевременное обращение.</p>
                     <img src='/icons8-arrow-80.png'></img>
                 </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>
-                <a href=''>
+                <a href='/practice/grajdanskye_spori'>
                 <motion.div className="practics-block box"   
                   //  className="box"
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                    <h5>Недвижемость и земля</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
+                    <h5>Гражданские споры</h5>
+                    <p>Упор на выбор оптимального способа защиты ваших прав.</p>
                     <img src='/icons8-arrow-80.png'></img>
                 </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>
-                <a href=''>
+                <a href='/practice/semeinoe_pravo '>
                 <motion.div className="practics-block box"   
                   //  className="box"
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}>
-                    <h5>Коммерческий арбитраж</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
+                    <h5>Семейное право</h5>
+                    <p>Персонально по имущественным и неимущественным спорам.</p>
                     <img src='/icons8-arrow-80.png'></img>
                 </motion.div>
               </a>
               </Col>
               <Col xs={12} md={4}>
-                <a href=''>
+                <a href='/practice/bancrotstvo'>
                 <motion.div className="practics-block box"   
                   //  className="box"
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Банкротство</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
+                    <p>Взаимодействие с арбитражным управляющим как условие соблюдения интересов доверителя.</p>
                     <img src='/icons8-arrow-80.png'></img>
                 </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>
-                <a href=''>
+                <a href='/practice/administrativnoe_proizvodstvo'>
                 <motion.div className="practics-block box"   
                   //  className="box"
                     whileHover={{ scale: 1.1 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Административное производство</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
+                    <p>Наш подход отличается от многих других по административным делам.</p>
                     <img src='/icons8-arrow-80.png'></img>
                 </motion.div>
                 </a>

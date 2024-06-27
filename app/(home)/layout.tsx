@@ -10,11 +10,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-
-import { WhatsAppOutlined, ContactsOutlined } from '@ant-design/icons';
-import { FloatButton } from 'antd';
-
-import { layfair_display_sc, el_messiri } from '../fonts'
+import { el_messiri } from '../fonts'
 
 export default function HomeLayout({
   children,
@@ -54,13 +50,13 @@ export default function HomeLayout({
                     <NavDropdown.Item href="/practice/arbitraj">
                     Арбитражные споры
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/practice/">Защита по уголовным делам</NavDropdown.Item>
-                    <NavDropdown.Item href="/practice">Недвижимость и земля</NavDropdown.Item>
-                    <NavDropdown.Item href="/practice">Коммерческий арбитраж</NavDropdown.Item>
-                    <NavDropdown.Item href="/practice">Банкротство</NavDropdown.Item>
-                    <NavDropdown.Item href="/practice">Административное производство</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice/ugolovnaya_dela">Защита по уголовным делам</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice/grajdanskye_spori">Гражданские споры</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice/semeinoe_pravo">Семейное право</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice/bancrotstvo">Банкротство</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice/administrativnoe_proizvodstvo">Административное производство</NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="/about">О коллегии адвокатов</Nav.Link>
+                  <Nav.Link href="/about">Об адвокатах</Nav.Link>
                   <Nav.Link href="/price">Прайс-Лист</Nav.Link>
                   <Nav.Link href="/contacts">Контакты</Nav.Link>
                 </Nav>
@@ -83,6 +79,7 @@ export default function HomeLayout({
                         <h6><b>Контакты</b></h6>
                         <ul>
                           <li><a href='tel:+79034780554' style={{color: 'black', textDecoration: 'none'}}>+7 (903) 478-05-54</a></li>
+                          <li><a href='tel:+79297873000' style={{color: 'black', textDecoration: 'none'}}>+7 (929) 787-30-00</a></li>
                           <li>Бульвар Энгельса 29а</li>
                         </ul>
                       </div>
@@ -92,7 +89,6 @@ export default function HomeLayout({
                         <h6><b>Документы</b></h6>
                         <ul>
                           <li><a href='/politica'>Политика конфиденциальности</a></li>
-                          <li>+7 (999) 999-99-99</li>
                         </ul>
                       </div>
                     </Col>
@@ -107,21 +103,23 @@ export default function HomeLayout({
                     </Col>
                   </Row>
                 </div>
-                <p className='m-0 pb-2'>© 2022 - 2023. Лисицкая и Удовенко. Все права защищены.</p>
+                <Row>
+                  <Col xs={12} md={6}>
+                    <div className="footer__wrapper">
+                    <p className='m-0 pb-2'>© 2022 - 2023. Лисицкая и Удовенко. Все права защищены.</p>
+                    </div>
+                  </Col>
+                  <Col xs={12} md={6}>
+                    <div className="footer__wrapper">
+                    <p className='m-0 pb-2'>Разработка сайта: <a href='https://kopi34.ru' style={{textDecoration: 'none'}} target='_blank'>kopi34.ru</a></p>
+                    </div>
+                  </Col>
+                </Row>
               </Container>
           </div>
       </footer>
 
-      <FloatButton.Group
-      trigger="click"
-      type="primary"
-      style={{ right: 24, fontSize: 60}}
-      icon={<ContactsOutlined />}
-      
-    >
-      {/* <FloatButton /> */}
-      <FloatButton icon={<WhatsAppOutlined />} />
-    </FloatButton.Group>
+
     </>
 
   );

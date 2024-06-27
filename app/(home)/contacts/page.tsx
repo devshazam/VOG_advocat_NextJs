@@ -34,6 +34,7 @@ export default function Contacts({ params }: { params: { id: string } }) {
                     <div className='contacts-info'>
                       <ul>
                         <li><a href='tel:+79034780554' style={{color: 'black', textDecoration: 'none'}}>+7 (903) 478-05-54</a></li>
+                        <li><a href='tel:+79297873000' style={{color: 'black', textDecoration: 'none'}}>+7 (929) 787-30-00</a></li>
                         <li>Бульвар Энгельса 29а</li>
                       </ul>
                     </div>
