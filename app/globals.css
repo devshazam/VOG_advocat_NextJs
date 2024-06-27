@@ -204,3 +204,55 @@ body {
 .btn{
   border-radius: 0%!important;
 }
+
+
+
+
+.practice-bg-wrapper{
+  background: url(/practice-background.jpg) 50% / cover no-repeat;
+  min-height: 130px;
+  padding-bottom: 30px
+}
+.aif-block{
+  /* margin: 8px; */
+  box-shadow: 0 0 10px rgba(141, 141, 141, 0.5); /* Параметры тени */
+}
+.aif-block img{
+  width: 100%;
+}
+
+.aif-block:hover{
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+}
+
+
+.wrap-map{
+  margin-bottom: 50px;
+}
+.contacts-block{
+  text-align: left;
+  width: 100%;
+  min-height: 200px;
+  background-image: linear-gradient(to right, #e2e2e2, #eeeeee);
+  /* background-color: #f5f5f5; */
+  padding: 25px;
+  margin-bottom: 28px;
+  box-shadow: 0 0 10px rgba(141, 141, 141, 0.5); /* Параметры тени */
+}
+
+.contacts-block img{
+  width: 40px;
+  transition: all 0.2s ease 0s;
+}
+.contacts-block .contacts-info{
+  min-height: 50px;
+}
+.contacts-block a{
+  display: inline-block;
+}
+.whatsapp:hover{
+  transform: scale(1.2);
+  /* transition: all 0.2s ease 0s; */
+
+  
+}

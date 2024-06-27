@@ -51,21 +51,21 @@ export default function HomeLayout({
                     title="Практики"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
-                    <NavDropdown.Item href="/practice">
+                    <NavDropdown.Item href="/practice/arbitraj">
                     Арбитражные споры
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/practice">Защита по уголовным делам</NavDropdown.Item>
+                    <NavDropdown.Item href="/practice/">Защита по уголовным делам</NavDropdown.Item>
                     <NavDropdown.Item href="/practice">Недвижимость и земля</NavDropdown.Item>
                     <NavDropdown.Item href="/practice">Коммерческий арбитраж</NavDropdown.Item>
                     <NavDropdown.Item href="/practice">Банкротство</NavDropdown.Item>
                     <NavDropdown.Item href="/practice">Административное производство</NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="#action1">О коллегии адвокатов</Nav.Link>
+                  <Nav.Link href="/about">О коллегии адвокатов</Nav.Link>
                   <Nav.Link href="/price">Прайс-Лист</Nav.Link>
-                  <Nav.Link href="#action2">Контакты</Nav.Link>
+                  <Nav.Link href="/contacts">Контакты</Nav.Link>
                 </Nav>
 
-                  <Button variant="primary"><a href='' style={{color: 'white', textDecoration: 'none'}}>Telegram</a></Button>
+                  <Button variant="primary"><a href='https://t.me/+79034780554' style={{color: 'white', textDecoration: 'none'}}>Telegram</a></Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </Container>
@@ -83,7 +83,7 @@ export default function HomeLayout({
                         <h6><b>Контакты</b></h6>
                         <ul>
                           <li><a href='tel:+79034780554' style={{color: 'black', textDecoration: 'none'}}>+7 (903) 478-05-54</a></li>
-                          <li><a href='tel:+79034780554' style={{color: 'black', textDecoration: 'none'}}>Бульвар Энгельса 29а</a></li>
+                          <li>Бульвар Энгельса 29а</li>
                         </ul>
                       </div>
                     </Col>

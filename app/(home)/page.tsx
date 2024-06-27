@@ -123,8 +123,8 @@ export default function Home() {
 
                   <motion.div className="practics-block box"   
                   //  className="box"
-      whileHover={{ scale: 1.1 }}
-      transition={{ type: "spring", stiffness: 400, damping: 10 }}>
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                       <h5>Арбитражные споры</h5>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
                       <img src='/icons8-arrow-80.png'></img>
@@ -133,47 +133,62 @@ export default function Home() {
               </Col>
               <Col xs={12} md={4}>
                 <a href=''>
-                <div className="practics-block">
+                <motion.div className="practics-block box"   
+                  //  className="box"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Защита по уголовным делам</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
                     <img src='/icons8-arrow-80.png'></img>
-                </div>
+                </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>
                 <a href=''>
-                <div className="practics-block">
+                <motion.div className="practics-block box"   
+                  //  className="box"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Недвижемость и земля</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
                     <img src='/icons8-arrow-80.png'></img>
-                </div>
+                </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>
                 <a href=''>
-                <div className="practics-block">
+                <motion.div className="practics-block box"   
+                  //  className="box"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Коммерческий арбитраж</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
                     <img src='/icons8-arrow-80.png'></img>
-                </div>
+                </motion.div>
               </a>
               </Col>
               <Col xs={12} md={4}>
                 <a href=''>
-                <div className="practics-block">
+                <motion.div className="practics-block box"   
+                  //  className="box"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Банкротство</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
                     <img src='/icons8-arrow-80.png'></img>
-                </div>
+                </motion.div>
                 </a>
               </Col>
               <Col xs={12} md={4}>
                 <a href=''>
-                <div className="practics-block">
+                <motion.div className="practics-block box"   
+                  //  className="box"
+                    whileHover={{ scale: 1.1 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}>
                     <h5>Административное производство</h5>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, perspiciatis.</p>
                     <img src='/icons8-arrow-80.png'></img>
-                </div>
+                </motion.div>
                 </a>
               </Col>
             </Row>

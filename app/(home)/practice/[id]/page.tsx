@@ -4,38 +4,41 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import type { FormProps } from 'antd';
-import { Button, Checkbox, Form, Input } from 'antd';
 
-type FieldType = {
-  username?: string;
-  password?: string;
-  remember?: string;
-};
+// Config: 
+
+// export function generateStaticParams() {
+//   return [{ id: 'arbitraj' }, { id: 'ugolovnye_deli' }, { id: 'nedvigemost' }, { id: 'kommercheskij_arbitraz' }, { id: 'bankrotstvo' }, { id: 'zashita' },]
+// }
 
 
+const pageTitles: any ={
+  arbitraj: "Арбитражные споры",
+  ugolovnye_deli: "Защита по уголовным делам",
+  nedvigemost: "Недвижимость и земля",
+  kommercheskij_arbitraz: "Коммерческий арбитраж",
+  bankrotstvo: "Банкротство",
+  zashita: "Правовая защита",
+}
 
-export default function Home() {
-
+export default function Practice({ params }: { params: { id: string } }) {
+  const id = params.id || '';
 
   
-  const onFinish: FormProps<FieldType>['onFinish'] = (values) => {
-    console.log('Success:', values);
-  };
-  
-  const onFinishFailed: FormProps<FieldType>['onFinishFailed'] = (errorInfo) => {
-    console.log('Failed:', errorInfo);
-  };
-
-
 
   return (
     <>
 
     <div >
+      <div className='practice-bg-wrapper'>
+          <Container>
+            <div className="main-text-wrapper">
+              <h1 >{pageTitles[id]}</h1>
+            </div>
+          </Container>
+      </div>
         <Container>
           <div className="wrap-practics">
-            <h2 className='h2-practics'>Арбитражные споры:</h2>
 
             <Row className=''>
               <p>Политика конфиденциальности — это заявление, в котором раскрываются некоторые или все способы, с помощью которых сайт собирает, использует и раскрывает персональные данные (личную информацию) посетителей сайта, а также управляет ими. Политика отвечает требованиям законодательства по защите конфиденциальности посетителей сайта и клиентов.
