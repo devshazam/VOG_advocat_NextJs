@@ -105,12 +105,12 @@ export default function HomeLayout({
                 </div>
                 <Row>
                   <Col xs={12} md={6}>
-                    <div className="footer__wrapper">
+                    <div className="">
                     <p className='m-0 pb-2'>© 2022 - 2023. Лисицкая и Удовенко. Все права защищены.</p>
                     </div>
                   </Col>
                   <Col xs={12} md={6}>
-                    <div className="footer__wrapper">
+                    <div className="">
                     <p className='m-0 pb-2'>Разработка сайта: <a href='https://kopi34.ru' style={{textDecoration: 'none'}} target='_blank'>kopi34.ru</a></p>
                     </div>
                   </Col>

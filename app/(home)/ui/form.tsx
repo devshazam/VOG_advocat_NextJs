@@ -26,19 +26,20 @@ export default function FormComponent() {
   return (
     <>
 
-<Form noValidate validated={validated} onSubmit={handleSubmit}>
+<Form noValidate validated={validated} onSubmit={handleSubmit}  action="https://formspree.io/f/mwpeedjj"
+  method="POST">
 
       <Row className="mb-3">
         <Form.Group as={Col} md="6" controlId="validationCustom03">
           <Form.Label>Ваше Имя:</Form.Label>
-          <Form.Control type="text" placeholder="Иван" required />
+          <Form.Control type="text" placeholder="Иван" required  name="name"/>
           <Form.Control.Feedback type="invalid">
             Введите пожалуйста имя.
           </Form.Control.Feedback>
         </Form.Group>
         <Form.Group as={Col} md="6" controlId="validationCustom04">
           <Form.Label>Email:</Form.Label>
-          <Form.Control type="text" placeholder="example@example.ru" required />
+          <Form.Control  type="email" name="email" placeholder="example@example.ru" required />
           <Form.Control.Feedback type="invalid">
             Введите пожалуйста email.
           </Form.Control.Feedback>

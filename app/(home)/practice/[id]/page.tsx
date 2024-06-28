@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -8,15 +8,14 @@ import mainConfig from '../../../../config/mainAppParameterObject'
 
 // Config: 
 
-// export function generateStaticParams() {
-//   return [{ id: 'arbitraj' }, { id: 'ugolovnye_deli' }, { id: 'nedvigemost' }, { id: 'kommercheskij_arbitraz' }, { id: 'bankrotstvo' }, { id: 'zashita' },]
-// }
+export function generateStaticParams() {
+  return [{ id: 'arbitraj' }, { id: 'ugolovnaya_dela' }, { id: 'administrativnoe_proizvodstvo' }, { id: 'grajdanskye_spori' }, { id: 'bankrotstvo' }, { id: 'semeinoe_pravo"' },]
+}
 
 
 export default function Practice({ params }: { params: { id: string } }) {
-  const id = params.id || '';
+  const id = params.id || 'arbitraj' ;
 
-  
 
   return (
     <>

@@ -204,18 +204,16 @@ export default function Home() {
             <Row className=''>
 
               <Col xs={12} md={3} >
-
-                <Image
-    src='/sert.jpg' className='sert-wrapper'/>
+                <Image src='/WhatsApp Image 2024-06-28 at 11.52.49.jpeg' className='sert-wrapper'/>
               </Col>
               <Col xs={12} md={3}>
-                <img src='/sert.jpg' className='sert-wrapper'></img>
+              <Image src='/WhatsApp Image 2024-06-28 at 11.49.43.jpeg' className='sert-wrapper'/>
               </Col>
               <Col xs={12} md={3}>
-                <img src='/sert.jpg' className='sert-wrapper'></img>
+              <Image src='/WhatsApp Image 2024-06-28 at 11.49.57.jpeg' className='sert-wrapper'/>
               </Col>
               <Col xs={12} md={3}>
-                <img src='/sert.jpg' className='sert-wrapper'></img>
+              <Image src='/WhatsApp Image 2024-06-28 at 11.50.08.jpeg' className='sert-wrapper'/>
               </Col>
             </Row>
           </div>
