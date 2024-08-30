@@ -11,6 +11,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import { el_messiri } from '../fonts'
+import ReactDOM from 'react-dom'
+ReactDOM.preload("/12334.jpg", { as: "image", fetchPriority: 'high' })
+
 
 export default function HomeLayout({
   children,

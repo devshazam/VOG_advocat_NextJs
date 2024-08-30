@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { inter, el_messiri } from './fonts';
 import "./globals.css";
-import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap/dist/css/bootstrap.css';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 
 import type { Viewport } from 'next'
@@ -14,6 +14,7 @@ export const viewport: Viewport = {
   // Also supported by less commonly used
   // interactiveWidget: 'resizes-visual',
 }
+
 
 export const metadata: Metadata = {
   title: "Адвокатское бюро 'Лисицкая и Удовенко'",
