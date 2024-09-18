@@ -50,7 +50,7 @@ export default function Practice({ params }: { params: { id: string } }) {
       <div className='practice-bg-wrapper'>
           <Container>
             <div className="main-text-wrapper">
-              <h1 >{mainConfig[id][0]}</h1>
+              <h1  className='big-title'>{mainConfig[id][0]}</h1>
             </div>
           </Container>
       </div>

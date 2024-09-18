@@ -18,7 +18,7 @@ export default function Contacts({ params }: { params: { id: string } }) {
       <div className='practice-bg-wrapper'>
           <Container>
             <div className="main-text-wrapper">
-              <h1 >Контакты</h1>
+              <h1  className='big-title'>Контакты</h1>
             </div>
           </Container>
       </div>

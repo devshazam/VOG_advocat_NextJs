@@ -109,7 +109,7 @@ export default function HomeLayout({
                 <Row>
                   <Col xs={12} md={6}>
                     <div className="">
-                    <p className='m-0 pb-2'>© 2022 - 2023. Лисицкая и Удовенко. Все права защищены.</p>
+                    <p className='m-0 pb-2'>© 2022 - 2024. Лисицкая и Удовенко. Все права защищены.</p>
                     </div>
                   </Col>
                   <Col xs={12} md={6}>

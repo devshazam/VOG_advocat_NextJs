@@ -53,7 +53,7 @@ export default function Home() {
     <div className='bg-wrapper'>
         <Container>
           <div className="main-text-wrapper">
-            <h1 className={el_messiri.className}>Лисицкая и Удовенко</h1>
+            <h2 className={el_messiri.className + ''}>Лисицкая и Удовенко</h2>
             <p>Разнообразные подходы, непохожий бэкграунд обуславливают вариативность защиты доверителя и как следствие - выбор оптимального пути. Обращайтесь в нашу компанию, если вы хотите получить качественные юридические услуги!</p>
           </div>
           <div className="steps__benefits-item">
@@ -204,7 +204,7 @@ export default function Home() {
             <Row className=''>
 
               <Col xs={12} md={3} >
-                <Image src='/WhatsApp Image 2024-06-28 at 11.52.49.jpeg' className='sert-wrapper'/>
+              <Image src='/WhatsApp Image 2024-06-28 at 11.52.49.jpeg' className='sert-wrapper'/>
               </Col>
               <Col xs={12} md={3}>
               <Image src='/WhatsApp Image 2024-06-28 at 11.49.43.jpeg' className='sert-wrapper'/>
